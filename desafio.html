@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" href="desafio.css">
+	<title>Controle de finanças</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 class="h1" align="center">Controle de Finanças</h1>
+	<h2  class= "h2" align="center">Gastos do Mês de Maio</h2>
+	<div class="botao-total" id="teste0">				
+	</div>
+	<!-- <p>Renda</p> -->
+	<div class="botao-renda" id="teste">				
+		 Renda 
+	</div>
+	</br>
+	<!-- <p>Despesas</p> -->
+	<div class="botao-gastos" id="teste2">
+		Depesas
+	</div>
+	</br>
+
+	<div>
+		<form name="calcform" method="post" id="formulario">
+			<select name="sinal" id="sinal">
+				<option value="adicionar">+</option>
+  				<option value="subtrair">-</option>
+			</select>
+			<label for="nomeid"></label>
+			<input type="text" name="gastos" id = "gastos" placeholder="adicionar">
+			<label for="nomeid"></label>
+			<input type="text" name="valores" id = "valores" placeholder="valor">
+			<button type="button" onclick="calcula()">Enviar</button> 
+		</form>
+	</div>
+
+	<h3>Renda</h3>
+	<div id="renda-3">
+			<table class="tabela1">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                    	<td id="renda-desc"></td>
+                    	<td id="valor-renda"></td>
+                    </tr>
+                </thead>
+                <tbody id="renda_tabela">
+
+               </tbody>
+    		</table>
+	</div> 
+
+	<h3>Despesas</h3>
+	<div id="despesa-3">
+		<table class= "tabela2" id="tabela2">
+			  <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                    	<td id="desp-desc"></td>
+                    	<td id="valor-desp"></td>
+                    </tr>
+                </thead>
+                <tbody id="despesa_tabela">
+
+                </tbody>	
+		</table>
+	</div>
+
+	<footer class="rodape-pagina">
+			Caio Mendes</br>caiomendes@cjr.org.com
+	</footer>
+	<script language="javascript" src="desafio.js"></script>
+</body>
+</html>
+
